@@ -1,0 +1,7 @@
+<h1> Customers </h1>
+<% @customers.each do |customer|%>
+   <div class="card" style="padding:15px;max-width:400px;"> 
+   <h3 class="text-uppercase"><%= customer.id%> </h3>
+    <%= customer.email%>
+    </div>
+<%end%>

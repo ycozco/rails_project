@@ -1,0 +1,14 @@
+<%= form_with(model: @customer, local:true) do |form| %>
+    <h1> New Customer</h1>
+    <div>
+        
+        <%=form.label :email %>
+        <%=form.text_field :email %><br>
+        <%=form.label :password %>
+        <%=form.password_field :password %><br>
+    </div>
+    
+    <div>
+        <%= form.submit %>
+    </div>
+<%end%>
