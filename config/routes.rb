@@ -3,8 +3,9 @@ Rails.application.routes.draw do
   get "welcome", to:"home#index"
 
   root to: "home#index"
+  
   get "customers", to:"customers#index"
-  get "customers/new", to: "customers#new"
+  get "customers/new", to: "customers#new", as: :new_customers
   get "customers/:id", to: "customers#show"
   get "customers/:id/edit", to: "customers#edit"
 
